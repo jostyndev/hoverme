@@ -1,0 +1,14 @@
+:root {
+    /* --blanco: #f9faff; */
+    --blanco: #161a25;
+    /* --negro: #2d2d33; */
+    --negro: #e3e3eb;
+    /* --gris: #8f8f8f; */
+    --gris: #4d4d52;
+    /* --gris-claro: #eef0f4; */
+    --gris-claro: #21212a;
+}
+
+.box-bg{
+    visibility: hidden;
+}

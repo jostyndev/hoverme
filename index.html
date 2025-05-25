@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" lang="es" content="@JostynDev" />
+    <meta
+      name="title"
+      content="Hoverme.css - efectos hover & focus con tecnología CSS3"
+    />
+    <meta
+      name="keywords"
+      content="Efectos hover, CSS hover, CSS, Gratis, librería de efectos hover, hover.css, hoverme.css"
+    />
+    <meta
+      name="description"
+      content="efectos hover para aplicar a enlaces, botones, logotipos, imágenes, etc. escoja entre muchos efectos que ofrece Hoverme y aplíquelo a sus propios elementos, modifique o simplemente utilícelo como inspiración."
+    />
+    <meta
+      name="copyright"
+      content="Desarrollado por: Jostyn Acevedo | © 2023 HoverMe - Todos los derechos reservados"
+    />
+    <meta name="image" content="img/hoverme-banner.png" />
+    <meta name="theme-color" content="#f9faff" />
+    <!-- metadatos facebook -->
+    <meta
+      property="og:title"
+      content="Hoverme.css - efectos hover & focus con tecnología CSS3"
+    />
+    <meta
+      name="og:description"
+      content="efectos hover para aplicar a enlaces, botones, logotipos, imágenes, etc. escoja entre muchos efectos que ofrece Hoverme y aplíquelo a sus propios elementos, modifique o simplemente utilícelo como inspiración."
+    />
+    <meta property="og:url" content="https://www.hoverme.epizy.com" />
+    <meta property="og:type" content="Librería CSS" />
+    <meta property="og:site_name" content="Hoverme" />
+    <meta name="og:image" content="img/hoverme-banner.png" />
+    <!-- estilos css -->
+    <link rel="stylesheet" href="/css/style.css?07062340" />
+    <link rel="stylesheet" href="/css/temas/white.css" id="tema" />
+    <link rel="stylesheet" href="/css/hoverme.css?070623" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="/icons/fontawesome/css/all.min.css" />
+    <!-- script -->
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="img/hoverme-favicon.ico"
+      type="image/x-icon"
+      crossorigin="anonymous"
+    />
+
+    <title>Hoverme.css - efectos hover & focus con tecnología CSS3</title>
+  </head>
+
+  <body>
+    <div class="home vh align-items-center" id="home">
+      <!-- <div class="redes">
+            <span><a href="https://www.facebook.com/jostyndev/" target="_blank"><i class="fa-brands fa-facebook-f"
+                        style="color: #ffffff;"></i></a></span>
+            <span><a href="https://www.instagram.com/jostyndev/" target="_blank"><i class="fa-brands fa-instagram"
+                        style="color: #ffffff;"></i></a></span>
+            <span><a href="https://wa.me/50558736716?text=Hola%20*Jostyn*!" target="_blank"><i
+                        class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a></span>
+            <span><a href="https://www.linkedin.com/in/jostyndev/" target="_blank"><i class="fa-brands fa-linkedin-in"
+                        style="color: #ffffff;"></i></a></span>
+        </div> -->
+      <div>
+        <button class="btn-subir" id="btnScrollToTop">
+          <i class="fa-solid fa-angle-up"></i>
+        </button>
+      </div>
+      <div class="box-bg"></div>
+      <div class="navbar align-items-center" id="navbar">
+        <div class="container">
+          <nav class="nav">
+            <a href="/" class="logo">
+              <!-- <div class="img-resolucion">
+                            <img class="img-adaptada img-shadow" src="/img/hoverme-logo-min.png" alt="logo"
+                                title="logo de hoverme" srcset="">
+                        </div> -->
+              <p class="logo-txt">Hoverme<span class="punto">.</span>css</p>
+            </a>
+            <div class="nav-enlaces">
+              <div class="txt-invisible nav-enlaces-mobile">Navigation</div>
+              <div class="linea nav-enlaces-mobile"></div>
+              <a href="/effects" class="e-p-h"
+                >effects<span class="punto">.</span></a
+              >
+              <br />
+              <div class="txt-invisible nav-enlaces-mobile">
+                Local links
+              </div>
+              <div class="linea nav-enlaces-mobile"></div>
+              <a href="#hoverMe" class="nav-enlaces-mobile">What is Hoverme?</a>
+              <a href="#installation" class="nav-enlaces-mobile"
+                >How to install Hoverme</a
+              >
+              <a href="#howToUse" class="nav-enlaces-mobile"
+                >how to use Hoverme</a
+              >
+            </div>
+            <button class="logo" id="menu-responsive">
+              <i class="fa-solid fa-bars" id="barraNav"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+      <div class="container">
+        <div class="box-home">
+          <div class="img-resolucion">
+            <img
+              class="img-adaptada img-shadow animate__animated animate__headShake"
+              src="/img/hoverme-logo-min.png"
+              alt="logo"
+              title="logo de hoverme"
+              srcset=""
+            />
+            <div class="version version-tag">v2.3.1</div>
+          </div>
+          <!-- <div class="logo-font">HOVER<span class="punto">.</span>ME</div> -->
+          <div class="box-home-cuerpo">
+            <h1 class="titulo-home">
+              hover effects with CSS3 technology to apply to links, buttons,
+              logos, images, etc.
+            </h1>
+            <p class="subtitulo">
+              Choose from many effects that Hoverme offers and apply it to your
+              own elements, modify or simply use it as inspiration.
+            </p>
+          </div>
+          <div class="botones-home">
+            <a href="#kit" class="btn back-primario act-push"
+              ><i class="fa-brands fa-get-pocket"></i> Install
+            </a>
+            <a
+              download
+              href="/archivos/hoverme-1.0.4-kit.zip"
+              class="btn back-secundario act-push"
+              crossorigin="anonymous"
+              ><i class="fa-solid fa-file-arrow-down"></i> Download ZIP</a
+            >
+          </div>
+          <div class="linea"></div>
+        </div>
+        <div class="box-btn">
+          <!-- <button class="btn">Ver mas</button> -->
+          <a href="#hoverMe" class="box-flecha">
+            <i class="fa-light fa-chevrons-down"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="docs">
+      <div class="container">
+        <div class="grid-container-colum-2">
+          <div class="grid-izquierdo">
+            <div class="seccion" id="hoverMe">
+              <span class="txt-invisible">Learn more about Hoverme</span>
+              <div>
+                <h2 class="titulo">
+                  What is Hoverme<span class="punto">.</span>?
+                </h2>
+              </div>
+              <br />
+              <p>
+                Hoverme.css is a library designed to provide a wide variety of
+                hover and focus effects for your web elements. It is easy to
+                use, lightweight, and customizable.
+              </p>
+              <br />
+              <p>
+                Whether you are a beginner or an experienced developer,
+                Hoverme.css can help you enhance the interactivity of your
+                website with minimal effort.
+              </p>
+              <br />
+              <p>
+                You can choose from many HOVER effects that Hoverme offers.
+              </p>
+              <br />
+              <a href="effects" class="btn2 back-secundario"
+                >See Effects</a
+              >
+            </div>
+            <div class="seccion" id="aprendeInstalarlo">
+              <span class="txt-invisible">Learn how to install it</span>
+              <div>
+                <h2 class="titulo">
+                  How to install Hoverme<span class="punto">.</span>
+                </h2>
+              </div>
+              <br />
+              <p>
+                You need to install Hoverme to use the effects. Here are the
+                ways to install it.
+              </p>
+              <br />
+              <h3 class="subtitulo" id="kit">installation</h3>
+              <!-- <br /> -->
+              <!-- <p>Install with <b>npm</b>:</p>
+              <div class="box-codigo" proximamente>
+                <div class="codigo">
+                  <pre>
+<code id="c-npm">$ <span class="var4">npm</span> <span class="var3">install</span> hoverme.css --save</code>
+</pre>
+                </div>
+                <div class="box-btn-codigo">
+                  <div class="btn-codigo">
+                    <button
+                      class="btn-copy icon v2"
+                      data-tooltip="copiar"
+                      id="b-c-npm"
+                      onclick="copyToClipBoard('c-npm')"
+                    >
+                      <i class="fa-regular fa-clipboard" id="i-c-npm"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="linea"></div>
+              <p>Install with <b>Yarn</b></p>
+              <div class="box-codigo" proximamente>
+                <div class="codigo">
+                  <pre>
+<code id="c-yarn">$ <span class="var4">yarn</span> <span class="var3">add</span> hoverme.css</code>
+</pre>
+                </div>
+                <div class="box-btn-codigo">
+                  <div class="btn-codigo">
+                    <button
+                      class="btn-copy icon v2"
+                      data-tooltip="copiar"
+                      id="b-c-yarn"
+                      onclick="copyToClipBoard('c-yarn')"
+                    >
+                      <i class="fa-regular fa-clipboard" id="i-c-yarn"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="linea"></div>
+              <p>You can import it into your file:</p>
+              <div class="box-codigo" proximamente>
+                <div class="codigo">
+                  <pre>
+<code id="c-js"><span class="var4">import</span> <span class="var3">'hoverme.css'</span>;</code>
+</pre>
+                </div>
+                <div class="box-btn-codigo">
+                  <div class="btn-codigo">
+                    <button
+                      class="btn-copy icon v2"
+                      data-tooltip="copiar"
+                      id="b-c-js"
+                      onclick="copyToClipBoard('c-js')"
+                    >
+                      <i class="fa-regular fa-clipboard" id="i-c-js"></i>
+                    </button>
+                  </div>
+                </div>
+              </div> -->
+              <div class="linea"></div>
+              <p>
+                Add it directly to the <b><code>&lt;head&gt;</code></b> of your
+                website using a <b>CDN</b>:
+              </p>
+              <div class="box-codigo">
+                <div class="codigo">
+                  <pre>
+<code id="c-html"><span><</span><span class="var1">link</span> <span class="var4">rel</span>=<span class="var2">"stylesheet"</span> 
+<span class="var4">href</span>=<span
+    class="var2">"https://cdn-hoverme.netlify.app/hoverme/<br><span>1.0.4/hoverme.css</span>"</span><span>></span></code>
+</pre>
+                </div>
+                <div class="box-btn-codigo">
+                  <div class="btn-codigo">
+                    <button
+                      class="btn-copy icon v2"
+                      data-tooltip="copiar"
+                      id="b-c-html"
+                      onclick="copyToClipBoard('c-html')"
+                    >
+                      <i class="fa-regular fa-clipboard" id="i-c-html"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="seccion" id="comoUsar">
+              <span class="txt-invisible">Learn how to use this library</span>
+              <div>
+                <h2 class="titulo">
+                  How to use Hoverme<span class="punto">.</span>
+                </h2>
+              </div>
+              <br />
+              <p>
+                This tool is very easy to use, just copy and paste. It's that
+                easy!
+              </p>
+              <br />
+              <p>
+                The first thing you need to do is install the CSS library. If
+                you haven't already, there are two ways to do this: through a
+                <a href="#kit" class="enlace">cdn</a> or by directly downloading
+                the Hoverme ZIP file, which you'll find at the top of the page.
+                Click
+                <a download href="archivos/hoverme-1.0.2-kit.zip" class="enlace"
+                  >here</a
+                >
+                to download.
+              </p>
+              <br />
+              <p>
+                Now go to the effects tab, there you will find the entire
+                collection of hover <a href="efectos/index.html#efe-2d" class="enlace">effects</a>, each button has two options, which
+                are to copy the <code>class</code> as <code>hover</code> or <code>focus</code>, once you do this just
+                paste the class into your button, image, logo, etc.
+              </p>
+              <br />
+              <p>Example:</p>
+              <div class="box-codigo">
+                <div class="codigo">
+                  <pre>
+<code id="c-ejemplo">&lt;<span class="var1">a</span> <span class="var4">href</span>=<span class="var2">"/"</span> <span class="var4">class</span>=<span class="var2">"hvr-shrink"</span>&gt;&lt;/<span class="var1">a</span>&gt;</code>
+</pre>
+                </div>
+                <div class="box-btn-codigo">
+                  <div class="btn-codigo">
+                    <button
+                      class="btn-copy icon v2"
+                      data-tooltip="copiar"
+                      id="b-c-ejemplo"
+                      onclick="copyToClipBoard('c-ejemplo')"
+                    >
+                      <i class="fa-regular fa-clipboard" id="i-c-ejemplo"></i>
+                    </button>
+                    <!-- <div class="ms-copy">copiar</div> -->
+                    <!-- <div class="ms-copy-active ms-copy-active-c-ejemplo">copiado</div> -->
+                  </div>
+                </div>
+              </div>
+              <!-- <p>puedes seguir leyendo en el blog, donde explico a detalle este tema!</p><br> -->
+              <!-- <a href="#" class="btn2 back-primario">Leer en el blog</a> -->
+            </div>
+            <!-- <div class="seccion" id="novedades">
+                        <span class="txt-invisible">actualizaciones de la pagina</span>
+                        <div>
+                            <h2 class="titulo">Novedades</h2>
+                        </div>
+                        <br>
+                        <div>
+                            <p class="p-novedades">Hoverme<span class="punto">.</span><span class="version">1.0.4</span> / <span class="txt-invisible">03 Abril 2023</span> </p>
+                            <ol>
+                                <li><a href="efectos/#efe-shadow" class="a-camaleon">Shadow and Glow Transitions</a> - Disponibles en hover & active<span class="punto">.</span> </li>
+                                <li><a href="efectos/#efe-bubbles" class="a-camaleon">Speech Bubbles</a> - Disponibles en hover & active<span class="punto">.</span> </li>
+                            </ol>
+                        </div>
+                        <br>
+                        <hr>
+                        <div>
+                            <p class="p-novedades">Hoverme<span class="punto">.</span><span class="version">1.0.3</span> / <span class="txt-invisible">26 Marzo 2023</span> </p>
+                            <ol>
+                                <li><a href="efectos/#efe-border" class="a-camaleon">Border Transitions</a> - Disponibles en hover & active<span class="punto">.</span> </li>
+                            </ol>
+                        </div>
+                        <br>
+                        <hr>
+                        <div>
+                            <p class="p-novedades">Hoverme<span class="punto">.</span><span class="version">1.0.2</span> / <span class="txt-invisible">18 Marzo 2023</span> </p>
+                            <ol>
+                                <li><a href="efectos/#efe-background" class="a-camaleon">Background Transitions</a> - Disponibles en hover & active<span class="punto">.</span> </li>
+                            </ol>
+                        </div>
+                        <br>
+                        <hr>
+                        <div>
+                            <p class="p-novedades">Hoverme<span class="punto">.</span><span class="version">1.0.1</span> / <span class="txt-invisible">02 febrero 2023</span> </p>
+                            <ol>
+                                <li>Efectos de <a href="efectos/#efe-2d" class="a-camaleon">transiciones 2D</a> - Disponibles en hover & active<span class="punto">.</span> </li>
+                                <li>Nueva opción en los botones de efectos, <i>copiar active</i><span class="punto">.</span></li>
+                                <li>Adaptación responsive de la web<span class="punto">.</span></li>
+                            </ol>
+                        </div>
+                    </div> -->
+          </div>
+
+          <div class="grid-derecho">
+            <div class="sticky">
+              <div class="nav-lateral">
+                <nav>
+                  <ul>
+                    <span class="txt-invisible">Local Links</span>
+                    <hr />
+                    <li><a href="#hoverMe">What is Hoverme?</a></li>
+                    <li>
+                      <a href="#aprendeInstalarlo">How to install Hoverme</a>
+                    </li>
+                    <li><a href="#comoUsar">How to use Hoverme</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- <div class="ads">
+                            <a href="https://wa.me/50558736716?text=Hola%20*Jostyn*!,%20Quiero%20contratar%20tus%20servicios." target="_blank" rel="noopener noreferrer">
+                                <div class="head-ads">
+                                    <img class="img-adaptada" src="/img/baner_publicidad-min.jpg" alt="" srcset="">
+                                </div>
+                                <div class="footer-ads">
+                                    <p><span class="txt-anuncio-ads">Anuncio</span> by <span class="name-ads">@JostynDev</span></p>
+                                </div>
+                            </a>
+                        </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="align-items-center justify-content-center">
+      <div class="container">
+        <div class="box-footer"></div>
+        <div class="copyright justify-content-center">
+          Powered by:
+          <a
+            href="https://jostyn.netlify.app"
+            class="enlace"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="margin: 0 10px;"
+            >@JostynDev</a
+          >
+          | © <span id="year" style="margin: 0 5px;"></span>Hoverme
+        </div>
+      </div>
+    </footer>
+    <script>
+        const date = new Date();
+        const year = date.getFullYear();
+
+        document.getElementById("year").innerHTML = year;
+    </script>
+    <script src="js/scroll.js?150323"></script>
+    <script src="js/funciones.js?150323"></script>
+  </body>
+</html>

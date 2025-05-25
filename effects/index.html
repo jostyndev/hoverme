@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" lang="es" content="@JostynDev">
+    <meta name="keywords" content="Efectos, CSS, HTML, Gratis">
+    <meta name="description" content="efectos hover con tecnología CSS3 para aplicar a enlaces, botones, logotipos, imágenes, etc.">
+    <meta name="copyright" content="Desarrollado por: @JostynDev | © 2023 HoverMe - Todos los derechos reservados">
+    <meta name="theme-color" content="#f9faff">
+
+    <!-- script -->
+    <!-- estilos css -->
+    <!-- <link rel="stylesheet" href="../css/hoverme.css"> -->
+    <link rel="stylesheet" href="../css/hoverme.css">
+    <link rel="stylesheet" href="/css/style.css?07062340">
+    <link rel="stylesheet" href="/css/temas/white.css">
+    <link rel="stylesheet" href="/css/style-efectos.css?070623">
+    <link rel="stylesheet" href="/icons/fontawesome/css/all.min.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/img/hoverme-favicon.ico" type="image/x-icon">
+
+    <title>Hoverme.css - efectos hover & focus con tecnología CSS3</title>
+
+</head>
+<body>
+    <div class="home" id="home">
+        <!-- <div class="redes">
+            <span><a href="https://www.facebook.com/jostyndev/" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a></span>
+            <span><a href="https://www.instagram.com/jostyndev/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></span>
+            <span><a href="https://wa.me/50558736716?text=Hola%20*Jostyn*!" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a></span>
+            <span><a href="https://www.linkedin.com/in/jostyndev/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a></span>
+        </div> -->
+        <div>
+            <button class="btn-subir" id="btnScrollToTop">
+                <i class="fa-solid fa-angle-up"></i>
+            </button>
+        </div>
+        <div class="box-bg">
+            <div class="bg">
+                <div class="bola1"></div>
+                <div class="bola2"></div>
+            </div>
+        </div>
+        <div class="navbar align-items-center" id="navbar">
+            <div class="container">
+                <nav class="nav">
+                    <a href="/" class="logo">
+                        <!-- <div class="img-resolucion">
+                            <img class="img-adaptada img-shadow" src="/img/hoverme-logo-min.png" alt="" srcset="">
+                        </div> -->
+                        <p class="logo-txt">Hoverme<span class="punto">.</span>css</p>
+                    </a>
+                    <div class="nav-enlaces">
+                        <div class="txt-invisible nav-enlaces-mobile">Navigation</div>
+                        <div class="linea nav-enlaces-mobile"></div>
+                        <a href="/" class="e-p-h">Home<span class="punto">.</span></a>
+                        <br>
+                        <div class="txt-invisible nav-enlaces-mobile">Local links</div>
+                        <div class="linea nav-enlaces-mobile"></div>
+                        <a href="/#hoverMe" class="nav-enlaces-mobile">What is Hoverme?</a>
+                        <a href="/#installation" class="nav-enlaces-mobile">How to install Hoverme</a>
+                        <a href="/#howToUse" class="nav-enlaces-mobile">how to use Hoverme</a>
+                    </div>
+                    <button class="logo" id="menu-responsive"><i class="fa-solid fa-bars" id="barraNav"></i></button>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box-home">
+                <div class="presentacion-efectos">
+                    <div class="logo-y-mensajes">
+                        <div class="grid-container-colum-3">
+                            <div class="box-info align-items-center">
+                                <div class="number align-items-center justify-content-center">1</div><p class="p-info">copy the class</p>
+                            </div>
+                            <div class="box-info align-items-center">
+                                <div class="number align-items-center justify-content-center">2</div><p class="p-info">paste in your code</p>
+                            </div>
+                            <div class="box-info align-items-center">
+                                <div class="number align-items-center justify-content-center">3</div><p class="p-info">enjoy the result</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <section>
+        <div class="container">
+            <div class="grid-container-colum-2">
+                <div class="grid-izquierdo">
+                    <div class="seccion" id="efe-2d">
+                        <div class="box-titulo">
+                            <h2 class="titulo">2D Transitions</h2>
+                        </div>
+                        <br>
+                        <p>Click on the button to copy the class, (hover or focus)</p>
+                        <br>
+                        <div class="box-efectos" id="efectos-2d">
+                            <div class="blur" id="blur-efectos-2d"></div>
+
+                            <div class="box-btn-stock" id="Grow">
+                                <button class="btn-stock hvr-grow act-grow" onclick="btnClipBoardOpciones('Grow','efectos-2d')">Grow</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-grow"  onclick="copyToClipBoard('hvr-grow')"><i class="fa-regular fa-clipboard" id="i-hvr-grow"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-grow">hvr-grow</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-grow" onclick="copyToClipBoard('act-grow')"><i class="fa-regular fa-clipboard" id="i-act-grow"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-grow">act-grow</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Shrink">
+                                <button class="btn-stock hvr-shrink" onclick="btnClipBoardOpciones('Shrink','efectos-2d')">Shrink</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-shrink" onclick="copyToClipBoard('hvr-shrink')"><i class="fa-regular fa-clipboard" id="i-hvr-shrink"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-shrink">hvr-shrink</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-shrink" onclick="copyToClipBoard('act-shrink')"><i class="fa-regular fa-clipboard" id="i-act-shrink"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-shrink">act-shrink</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Pulse">
+                                <button class="btn-stock hvr-pulse" onclick="btnClipBoardOpciones('Pulse','efectos-2d')">Pulse</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-pulse" onclick="copyToClipBoard('hvr-pulse')"><i class="fa-regular fa-clipboard" id="i-hvr-pulse"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-pulse">hvr-pulse</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-pulse" onclick="copyToClipBoard('act-pulse')"><i class="fa-regular fa-clipboard" id="i-act-pulse"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-pulse">act-pulse</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Pulse-grow">
+                                <button class="btn-stock hvr-pulse-grow" onclick="btnClipBoardOpciones('Pulse-grow','efectos-2d')">Pulse Grow</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-pulse-grow" onclick="copyToClipBoard('hvr-pulse-grow')"><i class="fa-regular fa-clipboard" id="i-hvr-pulse-grow"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-pulse-grow">hvr-pulse-grow</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="hover" id="b-act-pulse-grow" onclick="copyToClipBoard('act-pulse-grow')"><i class="fa-regular fa-clipboard" id="i-act-pulse-grow"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-pulse-grow">act-pulse-grow</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Push">
+                                <button class="btn-stock hvr-push" onclick="btnClipBoardOpciones('Push','efectos-2d')">Push</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-push" onclick="copyToClipBoard('hvr-push')"><i class="fa-regular fa-clipboard" id="i-hvr-push"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-push">hvr-push</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-push" onclick="copyToClipBoard('act-push')"><i class="fa-regular fa-clipboard" id="i-act-push"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-push">act-push</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Pulse-Shrink">
+                                <button class="btn-stock hvr-pulse-shrink" onclick="btnClipBoardOpciones('Pulse-Shrink','efectos-2d')">Pulse Shrink</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-pulse-shrink" onclick="copyToClipBoard('hvr-pulse-shrink')"><i class="fa-regular fa-clipboard" id="i-hvr-pulse-shrink"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-pulse-shrink">hvr-pulse-shrink</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-pulse-shrink" onclick="copyToClipBoard('act-pulse-shrink')"><i class="fa-regular fa-clipboard" id="i-act-pulse-shrink"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-pulse-shrink">act-pulse-shrink</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Pop">
+                                <button class="btn-stock hvr-pop" onclick="btnClipBoardOpciones('Pop','efectos-2d')">Pop</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-pop" onclick="copyToClipBoard('hvr-pop')"><i class="fa-regular fa-clipboard" id="i-hvr-pop"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-pop">hvr-pop</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-pop" onclick="copyToClipBoard('act-pop')"><i class="fa-regular fa-clipboard" id="i-act-pop"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-pop">act-pop</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Bounce-In">
+                                <button class="btn-stock hvr-bounce-in" onclick="btnClipBoardOpciones('Bounce-In','efectos-2d')">Bounce In</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bounce-in" onclick="copyToClipBoard('hvr-bounce-in')"><i class="fa-regular fa-clipboard" id="i-hvr-bounce-in"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bounce-in">hvr-bounce-in</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bounce-in" onclick="copyToClipBoard('act-bounce-in')"><i class="fa-regular fa-clipboard" id="i-act-bounce-in"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bounce-in">act-bounce-in</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Bounce-Out">
+                                <button class="btn-stock hvr-bounce-out" onclick="btnClipBoardOpciones('Bounce-Out','efectos-2d')">Bounce Out</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bounce-out" onclick="copyToClipBoard('hvr-bounce-out')"><i class="fa-regular fa-clipboard" id="i-hvr-bounce-out"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bounce-out">hvr-bounce-out</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bounce-out" onclick="copyToClipBoard('act-bounce-out')"><i class="fa-regular fa-clipboard" id="i-act-bounce-out"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bounce-out">act-bounce-out</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Rotate">
+                                <button class="btn-stock hvr-rotate" onclick="btnClipBoardOpciones('Rotate','efectos-2d')">Rotate</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-rotate" onclick="copyToClipBoard('hvr-rotate')"><i class="fa-regular fa-clipboard" id="i-hvr-rotate"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-rotate">hvr-rotate</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-rotate" onclick="copyToClipBoard('act-rotate')"><i class="fa-regular fa-clipboard" id="i-act-rotate"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-rotate">act-rotate</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Grow-Rotate">
+                                <button class="btn-stock hvr-grow-rotate" onclick="btnClipBoardOpciones('Grow-Rotate','efectos-2d')">Grow Rotate</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-grow-rotate" onclick="copyToClipBoard('hvr-grow-rotate')"><i class="fa-regular fa-clipboard" id="i-hvr-grow-rotate"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-grow-rotate">hvr-grow-rotate</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-grow-rotate" onclick="copyToClipBoard('act-grow-rotate')"><i class="fa-regular fa-clipboard" id="i-act-grow-rotate"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-grow-rotate">act-grow-rotate</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Float">
+                                <button class="btn-stock hvr-float" onclick="btnClipBoardOpciones('Float','efectos-2d')">Float</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-float" onclick="copyToClipBoard('hvr-float')"><i class="fa-regular fa-clipboard" id="i-hvr-float"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-float">hvr-float</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-float" onclick="copyToClipBoard('act-float')"><i class="fa-regular fa-clipboard" id="i-act-float"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-float">act-float</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Sink">
+                                <button class="btn-stock hvr-sink" onclick="btnClipBoardOpciones('Sink','efectos-2d')">Sink</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-sink" onclick="copyToClipBoard('hvr-sink')"><i class="fa-regular fa-clipboard" id="i-hvr-sink"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-sink">hvr-sink</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-sink" onclick="copyToClipBoard('act-sink')"><i class="fa-regular fa-clipboard" id="i-act-sink"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-sink">act-sink</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Bob">
+                                <button class="btn-stock hvr-bob" onclick="btnClipBoardOpciones('Bob','efectos-2d')">Bob</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bob" onclick="copyToClipBoard('hvr-bob')"><i class="fa-regular fa-clipboard" id="i-hvr-bob"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bob">hvr-bob</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bob" onclick="copyToClipBoard('act-bob')"><i class="fa-regular fa-clipboard" id="i-act-bob"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bob">act-bob</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Hang">
+                                <button class="btn-stock hvr-hang" onclick="btnClipBoardOpciones('Hang','efectos-2d')">Hang</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-hang" onclick="copyToClipBoard('hvr-hang')"><i class="fa-regular fa-clipboard"  id="i-hvr-hang"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-hang">hvr-hang</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-hang" onclick="copyToClipBoard('act-hang')"><i class="fa-regular fa-clipboard" id="i-act-hang"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-hang">act-hang</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Skew">
+                                <button class="btn-stock hvr-skew" onclick="btnClipBoardOpciones('Skew','efectos-2d')">Skew</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-skew" onclick="copyToClipBoard('hvr-skew')"><i class="fa-regular fa-clipboard" id="i-hvr-skew"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-skew">hvr-skew</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-skew" onclick="copyToClipBoard('act-skew')"><i class="fa-regular fa-clipboard" id="i-act-skew"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-skew">act-skew</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Skew-Forward">
+                                <button class="btn-stock hvr-skew-forward" onclick="btnClipBoardOpciones('Skew-Forward','efectos-2d')">Skew Forward</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-skew-forward" onclick="copyToClipBoard('hvr-skew-forward')"><i class="fa-regular fa-clipboard" id="i-hvr-skew-forward"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-skew-forward">hvr-skew-forward</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-skew-forward" onclick="copyToClipBoard('act-skew-forward')"><i class="fa-regular fa-clipboard" id="i-act-skew-forward"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-skew-forward">act-skew-forward</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Skew-Backward">
+                                <button class="btn-stock hvr-skew-backward" onclick="btnClipBoardOpciones('Skew-Backward','efectos-2d')">Skew Backward</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-skew-backward" onclick="copyToClipBoard('hvr-skew-backward')"><i class="fa-regular fa-clipboard" id="i-hvr-skew-backward"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-skew-backward">hvr-skew-backward</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-skew-backward" onclick="copyToClipBoard('act-skew-backward')"><i class="fa-regular fa-clipboard" id="i-act-skew-backward"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-skew-backward">act-skew-backward</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Wobble-Horizontal">
+                                <button class="btn-stock hvr-wobble-horizontal" onclick="btnClipBoardOpciones('Wobble-Horizontal','efectos-2d')">Wobble Horizontal</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-wobble-horizontal" onclick="copyToClipBoard('hvr-wobble-horizontal')"><i class="fa-regular fa-clipboard" id="i-hvr-wobble-horizontal"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-wobble-horizontal">hvr-wobble-horizontal</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-wobble-horizontal" onclick="copyToClipBoard('act-wobble-horizontal')"><i class="fa-regular fa-clipboard" id="i-act-wobble-horizontal"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-wobble-horizontal">act-wobble-horizontal</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Wobble-Vertical">
+                                <button class="btn-stock hvr-wobble-vertical" onclick="btnClipBoardOpciones('Wobble-Vertical','efectos-2d')">Wobble Vertical</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-wobble-vertical" onclick="copyToClipBoard('hvr-wobble-vertical')"><i class="fa-regular fa-clipboard" id="i-hvr-wobble-vertical"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-wobble-vertical">hvr-wobble-vertical</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-wobble-vertical" onclick="copyToClipBoard('act-wobble-vertical')"><i class="fa-regular fa-clipboard" id="i-act-wobble-vertical"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-wobble-vertical">act-wobble-vertical</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Wobble-To-Bottom-Right">
+                                <button class="btn-stock hvr-wobble-to-bottom-right" onclick="btnClipBoardOpciones('Wobble-To-Bottom-Right','efectos-2d')">Wobble To Bottom Right</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-wobble-to-bottom-right" onclick="copyToClipBoard('hvr-wobble-to-bottom-right')"><i class="fa-regular fa-clipboard" id="i-hvr-wobble-to-bottom-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-wobble-to-bottom-right">hvr-wobble-to-bottom-right</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-wobble-to-bottom-right" onclick="copyToClipBoard('act-wobble-to-bottom-right')"><i class="fa-regular fa-clipboard" id="i-act-wobble-to-bottom-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-wobble-to-bottom-right">act-wobble-to-bottom-right</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Wobble-To-Top-Right">
+                                <button class="btn-stock hvr-wobble-to-top-right" onclick="btnClipBoardOpciones('Wobble-To-Top-Right','efectos-2d')">Wobble To Top Right</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-wobble-to-top-right" onclick="copyToClipBoard('hvr-wobble-to-top-right')"><i class="fa-regular fa-clipboard" id="i-hvr-wobble-to-top-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-wobble-to-top-right">hvr-wobble-to-top-right</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-wobble-to-top-right" onclick="copyToClipBoard('act-wobble-to-top-right')"><i class="fa-regular fa-clipboard" id="i-act-wobble-to-top-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-wobble-to-top-right">act-wobble-to-top-right</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Wobble-Top">
+                                <button class="btn-stock hvr-wobble-top" onclick="btnClipBoardOpciones('Wobble-Top','efectos-2d')">Wobble Top</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-wobble-top" onclick="copyToClipBoard('hvr-wobble-top')"><i class="fa-regular fa-clipboard" id="i-hvr-wobble-top"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-wobble-top">hvr-wobble-top</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-wobble-top" onclick="copyToClipBoard('act-wobble-top')"><i class="fa-regular fa-clipboard" id="i-act-wobble-top"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-wobble-top">act-wobble-top</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Wobble-Bottom">
+                                <button class="btn-stock hvr-wobble-bottom" onclick="btnClipBoardOpciones('Wobble-Bottom','efectos-2d')">Wobble Bottom</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-wobble-bottom" onclick="copyToClipBoard('hvr-wobble-bottom')"><i class="fa-regular fa-clipboard" id="i-hvr-wobble-bottom"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-wobble-bottom">hvr-wobble-bottom</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-wobble-bottom" onclick="copyToClipBoard('act-wobble-bottom')"><i class="fa-regular fa-clipboard" id="i-act-wobble-bottom"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-wobble-bottom">act-wobble-bottom</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Wobble-Skew">
+                                <button class="btn-stock hvr-wobble-skew" onclick="btnClipBoardOpciones('Wobble-Skew','efectos-2d')">Wobble Skew</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-wobble-skew" onclick="copyToClipBoard('hvr-wobble-skew')"><i class="fa-regular fa-clipboard" id="i-hvr-wobble-skew"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-wobble-skew">hvr-wobble-skew</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-wobble-skew" onclick="copyToClipBoard('act-wobble-skew')"><i class="fa-regular fa-clipboard" id="i-act-wobble-skew"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-wobble-skew">act-wobble-skew</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Buzz">
+                                <button class="btn-stock hvr-buzz" onclick="btnClipBoardOpciones('Buzz','efectos-2d')">Buzz</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-buzz" onclick="copyToClipBoard('hvr-buzz')"><i class="fa-regular fa-clipboard" id="i-hvr-buzz"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-buzz">hvr-buzz</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-buzz" onclick="copyToClipBoard('act-buzz')"><i class="fa-regular fa-clipboard" id="i-act-buzz"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-buzz">act-buzz</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Buzz-Out">
+                                <button class="btn-stock hvr-buzz-out" onclick="btnClipBoardOpciones('Buzz-Out','efectos-2d')">Buzz Out</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-buzz-out" onclick="copyToClipBoard('hvr-buzz-out')"><i class="fa-regular fa-clipboard" id="i-hvr-buzz-out"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-buzz-out">hvr-buzz-out</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-buzz-out" onclick="copyToClipBoard('act-buzz-out')"><i class="fa-regular fa-clipboard" id="i-act-buzz-out"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-buzz-out">act-buzz-out</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Forward">
+                                <button class="btn-stock hvr-forward" onclick="btnClipBoardOpciones('Forward','efectos-2d')">Forward</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-forward" onclick="copyToClipBoard('hvr-forward')"><i class="fa-regular fa-clipboard" id="i-hvr-forward"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-forward">hvr-forward</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-forward" onclick="copyToClipBoard('act-forward')"><i class="fa-regular fa-clipboard" id="i-act-forward"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-forward">act-forward</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="Backward">
+                                <button class="btn-stock hvr-backward" onclick="btnClipBoardOpciones('Backward','efectos-2d')">Backward</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-backward" onclick="copyToClipBoard('hvr-backward')"><i class="fa-regular fa-clipboard" id="i-hvr-backward"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-backward">hvr-backward</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-backward" onclick="copyToClipBoard('act-backward')"><i class="fa-regular fa-clipboard" id="i-act-backward"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-backward">act-backward</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="seccion" id="efe-background">
+                        <div class="box-titulo">
+                            <h2 class="titulo">Background Transitions</h2>
+                        </div>
+                        <br>
+                        <div class="box-efectos" id="efectos-background">
+                            <div class="blur" id="blur-efectos-background"></div>
+
+                            <div class="box-btn-stock" id="fade">
+                                <button class="btn-stock hvr-fade" onclick="btnClipBoardOpciones('fade','efectos-background')">Fade</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-fade"  onclick="copyToClipBoard('hvr-fade')"><i class="fa-regular fa-clipboard" id="i-hvr-fade"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-fade">hvr-fade</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-fade" onclick="copyToClipBoard('act-fade')"><i class="fa-regular fa-clipboard" id="i-act-fade"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-fade">act-fade</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="back-pulse">
+                                <button class="btn-stock hvr-back-pulse" onclick="btnClipBoardOpciones('back-pulse','efectos-background')">Back-Pulse</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-back-pulse" onclick="copyToClipBoard('hvr-back-pulse')"><i class="fa-regular fa-clipboard" id="i-hvr-back-pulse"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-back-pulse">hvr-back-pulse</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-back-pulse" onclick="copyToClipBoard('act-back-pulse')"><i class="fa-regular fa-clipboard" id="i-act-back-pulse"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-back-pulse">act-back-pulse</p>
+                                </div>
+                            </div>
+
+                            <div class="box-btn-stock" id="sweep-to-right">
+                                <button class="btn-stock hvr-sweep-to-right" onclick="btnClipBoardOpciones('sweep-to-right','efectos-background')">Sweep-To-Right</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-sweep-to-right" onclick="copyToClipBoard('hvr-sweep-to-right')"><i class="fa-regular fa-clipboard" id="i-hvr-sweep-to-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-sweep-to-right">hvr-sweep-to-right</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-sweep-to-right" onclick="copyToClipBoard('act-sweep-to-right')"><i class="fa-regular fa-clipboard" id="i-act-sweep-to-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-sweep-to-right">act-sweep-to-right</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="sweep-to-left">
+                                <button class="btn-stock hvr-sweep-to-left" onclick="btnClipBoardOpciones('sweep-to-left','efectos-background')">Sweep-To-Left</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-sweep-to-left" onclick="copyToClipBoard('hvr-sweep-to-left')"><i class="fa-regular fa-clipboard" id="i-hvr-sweep-to-left"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-sweep-to-left">hvr-sweep-to-left</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-sweep-to-left" onclick="copyToClipBoard('act-sweep-to-left')"><i class="fa-regular fa-clipboard" id="i-act-sweep-to-left"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-sweep-to-left">act-sweep-to-left</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="sweep-to-bottom">
+                                <button class="btn-stock hvr-sweep-to-bottom" onclick="btnClipBoardOpciones('sweep-to-bottom','efectos-background')">Sweep To Bottom</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-sweep-to-bottom" onclick="copyToClipBoard('hvr-sweep-to-bottom')"><i class="fa-regular fa-clipboard" id="i-hvr-sweep-to-bottom"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-sweep-to-bottom">hvr-sweep-to-bottom</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-sweep-to-bottom" onclick="copyToClipBoard('act-sweep-to-bottom')"><i class="fa-regular fa-clipboard" id="i-act-sweep-to-bottom"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-sweep-to-bottom">act-sweep-to-bottom</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="sweep-to-top">
+                                <button class="btn-stock hvr-sweep-to-top" onclick="btnClipBoardOpciones('sweep-to-top','efectos-background')">Sweep To Top</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-sweep-to-top" onclick="copyToClipBoard('hvr-sweep-to-top')"><i class="fa-regular fa-clipboard" id="i-hvr-sweep-to-top"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-sweep-to-top">hvr-sweep-to-top</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-sweep-to-top" onclick="copyToClipBoard('act-sweep-to-top')"><i class="fa-regular fa-clipboard" id="i-act-sweep-to-top"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-sweep-to-top">act-sweep-to-top</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="bounce-to-right">
+                                <button class="btn-stock hvr-bounce-to-right" onclick="btnClipBoardOpciones('bounce-to-right','efectos-background')">Bounce To Right</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bounce-to-right" onclick="copyToClipBoard('hvr-bounce-to-right')"><i class="fa-regular fa-clipboard" id="i-hvr-bounce-to-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bounce-to-right">hvr-bounce-to-right</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bounce-to-right" onclick="copyToClipBoard('act-bounce-to-right')"><i class="fa-regular fa-clipboard" id="i-act-bounce-to-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bounce-to-right">act-bounce-to-right</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="bounce-to-left">
+                                <button class="btn-stock hvr-bounce-to-left" onclick="btnClipBoardOpciones('bounce-to-left','efectos-background')">Bounce To Left</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bounce-to-left" onclick="copyToClipBoard('hvr-bounce-to-left')"><i class="fa-regular fa-clipboard" id="i-hvr-bounce-to-left"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bounce-to-left">hvr-bounce-to-left</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bounce-to-left" onclick="copyToClipBoard('act-bounce-to-left')"><i class="fa-regular fa-clipboard" id="i-act-bounce-to-left"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bounce-to-left">act-bounce-to-left</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="bounce-to-bottom">
+                                <button class="btn-stock hvr-bounce-to-bottom" onclick="btnClipBoardOpciones('bounce-to-bottom','efectos-background')">Bounce To Bottom</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bounce-to-bottom" onclick="copyToClipBoard('hvr-bounce-to-bottom')"><i class="fa-regular fa-clipboard" id="i-hvr-bounce-to-bottom"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bounce-to-bottom">hvr-bounce-to-bottom</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bounce-to-bottom" onclick="copyToClipBoard('act-bounce-to-bottom')"><i class="fa-regular fa-clipboard" id="i-act-bounce-to-bottom"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bounce-to-bottom">act-bounce-to-bottom</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="bounce-to-top">
+                                <button class="btn-stock hvr-bounce-to-top" onclick="btnClipBoardOpciones('bounce-to-top','efectos-background')">Bounce To Top</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bounce-to-top" onclick="copyToClipBoard('hvr-bounce-to-top')"><i class="fa-regular fa-clipboard" id="i-hvr-bounce-to-top"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bounce-to-top">hvr-bounce-to-top</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bounce-to-top" onclick="copyToClipBoard('act-bounce-to-top')"><i class="fa-regular fa-clipboard" id="i-act-bounce-to-top"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bounce-to-top">act-bounce-to-top</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="radial-out">
+                                <button class="btn-stock hvr-radial-out" onclick="btnClipBoardOpciones('radial-out','efectos-background')">Radial Out</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-radial-out" onclick="copyToClipBoard('hvr-radial-out')"><i class="fa-regular fa-clipboard" id="i-hvr-radial-out"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-radial-out">hvr-radial-out</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-radial-out" onclick="copyToClipBoard('act-radial-out')"><i class="fa-regular fa-clipboard" id="i-act-radial-out"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-radial-out">act-radial-out</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="radial-in">
+                                <button class="btn-stock hvr-radial-in" onclick="btnClipBoardOpciones('radial-in','efectos-background')">Radial In</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-radial-in" onclick="copyToClipBoard('hvr-radial-in')"><i class="fa-regular fa-clipboard" id="i-hvr-radial-in"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-radial-in">hvr-radial-in</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-radial-in" onclick="copyToClipBoard('act-radial-in')"><i class="fa-regular fa-clipboard" id="i-act-radial-in"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-radial-in">act-radial-in</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="rectangle-in">
+                                <button class="btn-stock hvr-rectangle-in" onclick="btnClipBoardOpciones('rectangle-in','efectos-background')">Rectangle In</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-rectangle-in" onclick="copyToClipBoard('hvr-rectangle-in')"><i class="fa-regular fa-clipboard" id="i-hvr-rectangle-in"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-rectangle-in">hvr-rectangle-in</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-rectangle-in" onclick="copyToClipBoard('act-rectangle-in')"><i class="fa-regular fa-clipboard" id="i-act-rectangle-in"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-rectangle-in">act-rectangle-in</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="rectangle-out">
+                                <button class="btn-stock hvr-rectangle-out" onclick="btnClipBoardOpciones('rectangle-out','efectos-background')">Rectangle Out</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-rectangle-out" onclick="copyToClipBoard('hvr-rectangle-out')"><i class="fa-regular fa-clipboard" id="i-hvr-rectangle-out"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-rectangle-out">hvr-rectangle-out</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-rectangle-out" onclick="copyToClipBoard('act-rectangle-out')"><i class="fa-regular fa-clipboard" id="i-act-rectangle-out"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-rectangle-out">act-rectangle-out</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="shutter-in-horizontal">
+                                <button class="btn-stock hvr-shutter-in-horizontal" onclick="btnClipBoardOpciones('shutter-in-horizontal','efectos-background')">Shutter In Horizontal</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-shutter-in-horizontal" onclick="copyToClipBoard('hvr-shutter-in-horizontal')"><i class="fa-regular fa-clipboard" id="i-hvr-shutter-in-horizontal"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-shutter-in-horizontal">hvr-shutter-in-horizontal</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-shutter-in-horizontal" onclick="copyToClipBoard('act-shutter-in-horizontal')"><i class="fa-regular fa-clipboard" id="i-act-shutter-in-horizontal"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-shutter-in-horizontal">act-shutter-in-horizontal</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="shutter-out-horizontal">
+                                <button class="btn-stock hvr-shutter-out-horizontal" onclick="btnClipBoardOpciones('shutter-out-horizontal','efectos-background')">shutter-out-horizontal</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-shutter-out-horizontal" onclick="copyToClipBoard('hvr-shutter-out-horizontal')"><i class="fa-regular fa-clipboard" id="i-hvr-shutter-out-horizontal"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-shutter-out-horizontal">hvr-shutter-out-horizontal</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-shutter-out-horizontal" onclick="copyToClipBoard('act-shutter-out-horizontal')"><i class="fa-regular fa-clipboard" id="i-act-shutter-out-horizontal"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-shutter-out-horizontal">act-shutter-out-horizontal</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="shutter-in-vertical">
+                                <button class="btn-stock hvr-shutter-in-vertical" onclick="btnClipBoardOpciones('shutter-in-vertical','efectos-background')">shutter-in-vertical</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-shutter-in-vertical" onclick="copyToClipBoard('hvr-shutter-in-vertical')"><i class="fa-regular fa-clipboard" id="i-hvr-shutter-in-vertical"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-shutter-in-vertical">hvr-shutter-in-vertical</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-shutter-in-vertical" onclick="copyToClipBoard('act-shutter-in-vertical')"><i class="fa-regular fa-clipboard" id="i-act-shutter-in-vertical"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-shutter-in-vertical">act-shutter-in-vertical</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="shutter-out-vertical">
+                                <button class="btn-stock hvr-shutter-out-vertical" onclick="btnClipBoardOpciones('shutter-out-vertical','efectos-background')">shutter-out-vertical</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-shutter-out-vertical" onclick="copyToClipBoard('hvr-shutter-out-vertical')"><i class="fa-regular fa-clipboard" id="i-hvr-shutter-out-vertical"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-shutter-out-vertical">hvr-shutter-out-vertical</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-shutter-out-vertical" onclick="copyToClipBoard('act-shutter-out-vertical')"><i class="fa-regular fa-clipboard" id="i-act-shutter-out-vertical"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-shutter-out-vertical">act-shutter-out-vertical</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="seccion" id="efe-border">
+                        <div class="box-titulo">
+                            <h2 class="titulo">Border Transitions</h2>
+                        </div>
+                        <br>
+                        <div class="box-efectos" id="efectos-border">
+                            <div class="blur" id="blur-efectos-border"></div>
+
+                            <div class="box-btn-stock" id="border-fade">
+                                <button class="btn-stock hvr-border-fade" onclick="btnClipBoardOpciones('border-fade','efectos-border')">Border Fade</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-border-fade"  onclick="copyToClipBoard('hvr-border-fade')"><i class="fa-regular fa-clipboard" id="i-hvr-border-fade"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-border-fade">hvr-border-fade</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-border-fade" onclick="copyToClipBoard('act-border-fade')"><i class="fa-regular fa-clipboard" id="i-act-border-fade"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-border-fade">act-border-fade</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="hollow">
+                                <button class="btn-stock hvr-hollow" onclick="btnClipBoardOpciones('hollow','efectos-border')">Hollow</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-hollow"  onclick="copyToClipBoard('hvr-hollow')"><i class="fa-regular fa-clipboard" id="i-hvr-hollow"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-hollow">hvr-hollow</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-hollow" onclick="copyToClipBoard('act-hollow')"><i class="fa-regular fa-clipboard" id="i-act-hollow"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-hollow">act-hollow</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="trim">
+                                <button class="btn-stock hvr-trim" onclick="btnClipBoardOpciones('trim','efectos-border')">Trim</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-trim"  onclick="copyToClipBoard('hvr-trim')"><i class="fa-regular fa-clipboard" id="i-hvr-trim"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-trim">hvr-trim</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-trim" onclick="copyToClipBoard('act-trim')"><i class="fa-regular fa-clipboard" id="i-act-trim"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-trim">act-trim</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="ripple-out">
+                                <button class="btn-stock hvr-ripple-out" onclick="btnClipBoardOpciones('ripple-out','efectos-border')">Ripple Out</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-ripple-out"  onclick="copyToClipBoard('hvr-ripple-out')"><i class="fa-regular fa-clipboard" id="i-hvr-ripple-out"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-ripple-out">hvr-ripple-out</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-ripple-out" onclick="copyToClipBoard('act-ripple-out')"><i class="fa-regular fa-clipboard" id="i-act-ripple-out"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-ripple-out">act-ripple-out</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="ripple-in">
+                                <button class="btn-stock hvr-ripple-in" onclick="btnClipBoardOpciones('ripple-in','efectos-border')">Ripple In</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-ripple-in"  onclick="copyToClipBoard('hvr-ripple-in')"><i class="fa-regular fa-clipboard" id="i-hvr-ripple-in"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-ripple-in">hvr-ripple-in</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-ripple-in" onclick="copyToClipBoard('act-ripple-in')"><i class="fa-regular fa-clipboard" id="i-act-ripple-in"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-ripple-in">act-ripple-in</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="outline-out">
+                                <button class="btn-stock hvr-outline-out" onclick="btnClipBoardOpciones('outline-out','efectos-border')">Outline Out</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-outline-out"  onclick="copyToClipBoard('hvr-outline-out')"><i class="fa-regular fa-clipboard" id="i-hvr-outline-out"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-outline-out">hvr-outline-out</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-outline-out" onclick="copyToClipBoard('act-outline-out')"><i class="fa-regular fa-clipboard" id="i-act-outline-out"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-outline-out">act-outline-out</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="outline-in">
+                                <button class="btn-stock hvr-outline-in" onclick="btnClipBoardOpciones('outline-in','efectos-border')">Outline In</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-outline-in"  onclick="copyToClipBoard('hvr-outline-in')"><i class="fa-regular fa-clipboard" id="i-hvr-outline-in"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-outline-in">hvr-outline-in</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-outline-in" onclick="copyToClipBoard('act-outline-in')"><i class="fa-regular fa-clipboard" id="i-act-outline-in"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-outline-in">act-outline-in</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="round-corners">
+                                <button class="btn-stock hvr-round-corners" onclick="btnClipBoardOpciones('round-corners','efectos-border')">round-corners</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-round-corners"  onclick="copyToClipBoard('hvr-round-corners')"><i class="fa-regular fa-clipboard" id="i-hvr-round-corners"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-round-corners">hvr-round-corners</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-round-corners" onclick="copyToClipBoard('act-round-corners')"><i class="fa-regular fa-clipboard" id="i-act-round-corners"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-round-corners">act-round-corners</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="underline-from-left">
+                                <button class="btn-stock hvr-underline-from-left" onclick="btnClipBoardOpciones('underline-from-left','efectos-border')">underline-from-left</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-underline-from-left"  onclick="copyToClipBoard('hvr-underline-from-left')"><i class="fa-regular fa-clipboard" id="i-hvr-underline-from-left"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-underline-from-left">hvr-underline-from-left</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-underline-from-left" onclick="copyToClipBoard('act-underline-from-left')"><i class="fa-regular fa-clipboard" id="i-act-underline-from-left"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-underline-from-left">act-underline-from-left</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="underline-from-center">
+                                <button class="btn-stock hvr-underline-from-center" onclick="btnClipBoardOpciones('underline-from-center','efectos-border')">underline-from-center</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-underline-from-center"  onclick="copyToClipBoard('hvr-underline-from-center')"><i class="fa-regular fa-clipboard" id="i-hvr-underline-from-center"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-underline-from-center">hvr-underline-from-center</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-underline-from-center" onclick="copyToClipBoard('act-underline-from-center')"><i class="fa-regular fa-clipboard" id="i-act-underline-from-center"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-underline-from-center">act-underline-from-center</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="underline-from-right">
+                                <button class="btn-stock hvr-underline-from-right" onclick="btnClipBoardOpciones('underline-from-right','efectos-border')">underline-from-right</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-underline-from-right"  onclick="copyToClipBoard('hvr-underline-from-right')"><i class="fa-regular fa-clipboard" id="i-hvr-underline-from-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-underline-from-right">hvr-underline-from-right</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-underline-from-right" onclick="copyToClipBoard('act-underline-from-right')"><i class="fa-regular fa-clipboard" id="i-act-underline-from-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-underline-from-right">act-underline-from-right</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="overline-from-left">
+                                <button class="btn-stock hvr-overline-from-left" onclick="btnClipBoardOpciones('overline-from-left','efectos-border')">overline-from-left</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-overline-from-left"  onclick="copyToClipBoard('hvr-overline-from-left')"><i class="fa-regular fa-clipboard" id="i-hvr-overline-from-left"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-overline-from-left">hvr-overline-from-left</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-overline-from-left" onclick="copyToClipBoard('act-overline-from-left')"><i class="fa-regular fa-clipboard" id="i-act-overline-from-left"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-overline-from-left">act-overline-from-left</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="overline-from-center">
+                                <button class="btn-stock hvr-overline-from-center" onclick="btnClipBoardOpciones('overline-from-center','efectos-border')">overline-from-center</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-overline-from-center"  onclick="copyToClipBoard('hvr-overline-from-center')"><i class="fa-regular fa-clipboard" id="i-hvr-overline-from-center"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-overline-from-center">hvr-overline-from-center</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-overline-from-center" onclick="copyToClipBoard('act-overline-from-center')"><i class="fa-regular fa-clipboard" id="i-act-overline-from-center"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-overline-from-center">act-overline-from-center</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="overline-from-right">
+                                <button class="btn-stock hvr-overline-from-right" onclick="btnClipBoardOpciones('overline-from-right','efectos-border')">overline-from-right</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-overline-from-right"  onclick="copyToClipBoard('hvr-overline-from-right')"><i class="fa-regular fa-clipboard" id="i-hvr-overline-from-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-overline-from-right">hvr-overline-from-right</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-overline-from-right" onclick="copyToClipBoard('act-overline-from-right')"><i class="fa-regular fa-clipboard" id="i-act-overline-from-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-overline-from-right">act-overline-from-right</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="reveal">
+                                <button class="btn-stock hvr-reveal" onclick="btnClipBoardOpciones('reveal','efectos-border')">reveal</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-reveal"  onclick="copyToClipBoard('hvr-reveal')"><i class="fa-regular fa-clipboard" id="i-hvr-reveal"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-reveal">hvr-reveal</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-reveal" onclick="copyToClipBoard('act-reveal')"><i class="fa-regular fa-clipboard" id="i-act-reveal"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-reveal">act-reveal</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="underline-reveal">
+                                <button class="btn-stock hvr-underline-reveal" onclick="btnClipBoardOpciones('underline-reveal','efectos-border')">underline-reveal</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-underline-reveal"  onclick="copyToClipBoard('hvr-underline-reveal')"><i class="fa-regular fa-clipboard" id="i-hvr-underline-reveal"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-underline-reveal">hvr-underline-reveal</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-underline-reveal" onclick="copyToClipBoard('act-underline-reveal')"><i class="fa-regular fa-clipboard" id="i-act-underline-reveal"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-underline-reveal">act-underline-reveal</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="overline-reveal">
+                                <button class="btn-stock hvr-overline-reveal" onclick="btnClipBoardOpciones('overline-reveal','efectos-border')">overline-reveal</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-overline-reveal"  onclick="copyToClipBoard('hvr-overline-reveal')"><i class="fa-regular fa-clipboard" id="i-hvr-overline-reveal"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-overline-reveal">hvr-overline-reveal</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-overline-reveal" onclick="copyToClipBoard('act-overline-reveal')"><i class="fa-regular fa-clipboard" id="i-act-overline-reveal"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-overline-reveal">act-overline-reveal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <p>You can modify the color with the following CSS: <br> (Applies <a href="#efe-background" class="a-camaleon">Background Transitions</a> & <a href="#efe-border" class="a-camaleon">Border Transitions</a> )
+                        </p>
+                        <hr>
+                        <br>
+                        <div class="box-codigo">
+                            <div class="codigo">
+<pre>
+<code id="c-back-css"><span class="var4">:root{
+    --default-color:</span><span class="hexadecimal"> #e81e6d </span><span class="var1">!important</span>; <span class="var5">/*main color*/</span>
+    <span class="var4">--default-back:</span> #eef0f4 <span class="var1">!important</span>; <span class="var5">/*background color*/</span>
+    <span class="var4">--font-color:</span> #fff <span class="var1">!important</span>; <span class="var5">/*font color*/</span>
+<span class="var4">}</span>
+</code>
+</pre>
+                            </div>
+                            <div class="box-btn-codigo">
+                                <div class="btn-codigo">
+                                    <button class="btn-copy icon v2" data-tooltip="copiar" id="b-c-back-css" onclick="copyToClipBoard('c-back-css')"><i class="fa-regular fa-clipboard" id="i-c-back-css"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="seccion" id="efe-shadow">
+                        <div class="box-titulo">
+                            <h2 class="titulo">Shadow and Glow Transitions</h2>
+                        </div>
+                        <br>
+                        <div class="box-efectos" id="efectos-shadow">
+                            <div class="blur" id="blur-efectos-shadow"></div>
+
+                            <div class="box-btn-stock" id="shadow">
+                                <button class="btn-stock hvr-shadow" onclick="btnClipBoardOpciones('shadow','efectos-shadow')">shadow</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-shadow"  onclick="copyToClipBoard('hvr-shadow')"><i class="fa-regular fa-clipboard" id="i-hvr-shadow"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-shadow">hvr-shadow</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-shadow" onclick="copyToClipBoard('act-shadow')"><i class="fa-regular fa-clipboard" id="i-act-shadow"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-shadow">act-shadow</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="grow-shadow">
+                                <button class="btn-stock hvr-grow-shadow" onclick="btnClipBoardOpciones('grow-shadow','efectos-shadow')">Grow Shadow</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-grow-shadow"  onclick="copyToClipBoard('hvr-grow-shadow')"><i class="fa-regular fa-clipboard" id="i-hvr-grow-shadow"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-grow-shadow">hvr-grow-shadow</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-grow-shadow" onclick="copyToClipBoard('act-grow-shadow')"><i class="fa-regular fa-clipboard" id="i-act-grow-shadow"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-grow-shadow">act-grow-shadow</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="box-shadow-outset">
+                                <button class="btn-stock hvr-box-shadow-outset" onclick="btnClipBoardOpciones('box-shadow-outset','efectos-shadow')">Box Shadow Outset</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-box-shadow-outset"  onclick="copyToClipBoard('hvr-box-shadow-outset')"><i class="fa-regular fa-clipboard" id="i-hvr-box-shadow-outset"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-box-shadow-outset">hvr-box-shadow-outset</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-box-shadow-outset" onclick="copyToClipBoard('act-box-shadow-outset')"><i class="fa-regular fa-clipboard" id="i-act-box-shadow-outset"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-box-shadow-outset">act-box-shadow-outset</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="box-shadow-inset">
+                                <button class="btn-stock hvr-box-shadow-inset" onclick="btnClipBoardOpciones('box-shadow-inset','efectos-shadow')">Box Shadow Inset</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-box-shadow-inset"  onclick="copyToClipBoard('hvr-box-shadow-inset')"><i class="fa-regular fa-clipboard" id="i-hvr-box-shadow-inset"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-box-shadow-inset">hvr-box-shadow-inset</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-box-shadow-inset" onclick="copyToClipBoard('act-box-shadow-inset')"><i class="fa-regular fa-clipboard" id="i-act-box-shadow-inset"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-box-shadow-inset">act-box-shadow-inset</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="float-shadow">
+                                <button class="btn-stock hvr-float-shadow" onclick="btnClipBoardOpciones('float-shadow','efectos-shadow')">Float Shadow</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-float-shadow"  onclick="copyToClipBoard('hvr-float-shadow')"><i class="fa-regular fa-clipboard" id="i-hvr-float-shadow"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-float-shadow">hvr-float-shadow</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-float-shadow" onclick="copyToClipBoard('act-float-shadow')"><i class="fa-regular fa-clipboard" id="i-act-float-shadow"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-float-shadow">act-float-shadow</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="shadow-radial">
+                                <button class="btn-stock hvr-shadow-radial" onclick="btnClipBoardOpciones('shadow-radial','efectos-shadow')">Shadow Radial</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-shadow-radial"  onclick="copyToClipBoard('hvr-shadow-radial')"><i class="fa-regular fa-clipboard" id="i-hvr-shadow-radial"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-shadow-radial">hvr-shadow-radial</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-shadow-radial" onclick="copyToClipBoard('act-shadow-radial')"><i class="fa-regular fa-clipboard" id="i-act-shadow-radial"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-shadow-radial">act-shadow-radial</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="glow">
+                                <button class="btn-stock hvr-glow" onclick="btnClipBoardOpciones('glow','efectos-shadow')">Glow</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-glow"  onclick="copyToClipBoard('hvr-glow')"><i class="fa-regular fa-clipboard" id="i-hvr-glow"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-glow">hvr-glow</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-glow" onclick="copyToClipBoard('act-glow')"><i class="fa-regular fa-clipboard" id="i-act-glow"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-glow">act-glow</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <br>
+                    <div class="seccion" id="efe-bubbles">
+                        <div class="box-titulo">
+                            <h2 class="titulo">Speech Bubbles</h2>
+                        </div>
+                        <br>
+                        <div class="box-efectos" id="efectos-bubble">
+                            <div class="blur" id="blur-efectos-bubble"></div>
+
+                            <div class="box-btn-stock" id="bubble-top">
+                                <button class="btn-stock hvr-bubble-top" onclick="btnClipBoardOpciones('bubble-top','efectos-bubble')">bubble-top</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bubble-top"  onclick="copyToClipBoard('hvr-bubble-top')"><i class="fa-regular fa-clipboard" id="i-hvr-bubble-top"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bubble-top">hvr-bubble-top</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bubble-top" onclick="copyToClipBoard('act-bubble-top')"><i class="fa-regular fa-clipboard" id="i-act-bubble-top"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bubble-top">act-bubble-top</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="bubble-right">
+                                <button class="btn-stock hvr-bubble-right" onclick="btnClipBoardOpciones('bubble-right','efectos-bubble')">bubble-right</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bubble-right"  onclick="copyToClipBoard('hvr-bubble-right')"><i class="fa-regular fa-clipboard" id="i-hvr-bubble-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bubble-right">hvr-bubble-right</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bubble-right" onclick="copyToClipBoard('act-bubble-right')"><i class="fa-regular fa-clipboard" id="i-act-bubble-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bubble-right">act-bubble-right</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="bubble-bottom">
+                                <button class="btn-stock hvr-bubble-bottom" onclick="btnClipBoardOpciones('bubble-bottom','efectos-bubble')">bubble-bottom</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bubble-bottom"  onclick="copyToClipBoard('hvr-bubble-bottom')"><i class="fa-regular fa-clipboard" id="i-hvr-bubble-bottom"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bubble-bottom">hvr-bubble-bottom</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bubble-bottom" onclick="copyToClipBoard('act-bubble-bottom')"><i class="fa-regular fa-clipboard" id="i-act-bubble-bottom"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bubble-bottom">act-bubble-bottom</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="bubble-left">
+                                <button class="btn-stock hvr-bubble-left" onclick="btnClipBoardOpciones('bubble-left','efectos-bubble')">bubble-left</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bubble-left"  onclick="copyToClipBoard('hvr-bubble-left')"><i class="fa-regular fa-clipboard" id="i-hvr-bubble-left"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bubble-left">hvr-bubble-left</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bubble-left" onclick="copyToClipBoard('act-bubble-left')"><i class="fa-regular fa-clipboard" id="i-act-bubble-left"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bubble-left">act-bubble-left</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="bubble-float-top">
+                                <button class="btn-stock hvr-bubble-float-top" onclick="btnClipBoardOpciones('bubble-float-top','efectos-bubble')">bubble-float-top</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bubble-float-top"  onclick="copyToClipBoard('hvr-bubble-float-top')"><i class="fa-regular fa-clipboard" id="i-hvr-bubble-float-top"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bubble-float-top">hvr-bubble-float-top</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bubble-float-top" onclick="copyToClipBoard('act-bubble-float-top')"><i class="fa-regular fa-clipboard" id="i-act-bubble-float-top"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bubble-float-top">act-bubble-float-top</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="bubble-float-right">
+                                <button class="btn-stock hvr-bubble-float-right" onclick="btnClipBoardOpciones('bubble-float-right','efectos-bubble')">bubble-float-right</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bubble-float-right"  onclick="copyToClipBoard('hvr-bubble-float-right')"><i class="fa-regular fa-clipboard" id="i-hvr-bubble-float-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bubble-float-right">hvr-bubble-float-right</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bubble-float-right" onclick="copyToClipBoard('act-bubble-float-right')"><i class="fa-regular fa-clipboard" id="i-act-bubble-float-right"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bubble-float-right">act-bubble-float-right</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="bubble-float-bottom">
+                                <button class="btn-stock hvr-bubble-float-bottom" onclick="btnClipBoardOpciones('bubble-float-bottom','efectos-bubble')">bubble-float-bottom</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bubble-float-bottom"  onclick="copyToClipBoard('hvr-bubble-float-bottom')"><i class="fa-regular fa-clipboard" id="i-hvr-bubble-float-bottom"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bubble-float-bottom">hvr-bubble-float-bottom</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bubble-float-bottom" onclick="copyToClipBoard('act-bubble-float-bottom')"><i class="fa-regular fa-clipboard" id="i-act-bubble-float-bottom"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bubble-float-bottom">act-bubble-float-bottom</p>
+                                </div>
+                            </div>
+                            <div class="box-btn-stock" id="bubble-float-left">
+                                <button class="btn-stock hvr-bubble-float-left" onclick="btnClipBoardOpciones('bubble-float-left','efectos-bubble')">bubble-float-left</button>
+                                <div class="btn-stock-opciones">
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy btn-copy-hvr icon" data-tooltip="hover" id="b-hvr-bubble-float-left"  onclick="copyToClipBoard('hvr-bubble-float-left')"><i class="fa-regular fa-clipboard" id="i-hvr-bubble-float-left"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="hvr-bubble-float-left">hvr-bubble-float-left</p>
+                                    <div class="btn-codigo">
+                                        <button class="btn-copy icon" data-tooltip="focus" id="b-act-bubble-float-left" onclick="copyToClipBoard('act-bubble-float-left')"><i class="fa-regular fa-clipboard" id="i-act-bubble-float-left"></i></button>
+                                    </div>
+                                    <p class="ele-oculto" id="act-bubble-float-left">act-bubble-float-left</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+                <div class="grid-derecho">
+                    <div class="sticky">
+                        <div class="nav-lateral">
+                            <nav>
+                                <ul>
+                                    <span class="txt-invisible">Local Links</span>
+                                    <hr />
+                                    <li><a href="/#hoverMe">What is Hoverme?</a></li>
+                                    <li>
+                                      <a href="/#aprendeInstalarlo">How to install Hoverme</a>
+                                    </li>
+                                    <li><a href="/#comoUsar">How to use Hoverme</a></li>
+                                  </ul>
+                            </nav>
+                        </div>
+                        <!-- <div class="ads">
+                            <a href="https://wa.me/50558736716?text=Hola%20*Jostyn*!,%20Quiero%20contratar%20tus%20servicios." target="_blank" rel="noopener noreferrer">
+                                <div class="head-ads">
+                                    <img class="img-adaptada" src="/img/baner_publicidad-min.jpg" alt="" srcset="">
+                                </div>
+                                <div class="footer-ads">
+                                    <p><span class="txt-anuncio-ads">Anuncio</span> by <span class="name-ads">@JostynDev</span></p>
+                                </div>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="align-items-center justify-content-center">
+        <div class="container">
+          <div class="box-footer"></div>
+          <div class="copyright justify-content-center">
+            Powered by:
+            <a
+              href="https://jostyn.netlify.app"
+              class="enlace"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="margin: 0 10px;"
+              >@JostynDev</a
+            >
+            | © <span id="year" style="margin: 0 5px;"></span>Hoverme
+          </div>
+        </div>
+      </footer>
+    <script>
+        const date = new Date();
+        const year = date.getFullYear();
+
+        document.getElementById("year").innerHTML = year;
+    </script>
+    <script src="/js/scroll.js?150323"></script>
+    <script src="/js/funciones.js?280323"></script>
+</body>
+</html>
